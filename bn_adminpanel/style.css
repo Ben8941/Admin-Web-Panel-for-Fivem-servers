@@ -44,7 +44,6 @@ body {
   align-items: center;
 }
 
-/* HEADER */
 .head {
   display: flex;
   align-items: center;
@@ -80,6 +79,7 @@ body {
   border-radius: 10px;
   position: relative;
   margin-bottom: 10px;
+  flex: none;
 }
 
 .status-point {
@@ -196,6 +196,15 @@ ul li a span {
   height: 10px;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
+}
+
+li.active {
+  background-color: rgba(34, 211, 238, 0.10);
+  border-color: rgba(34, 211, 238, 0.30);
+}
+
+li.active .point {
+  background-color: rgba(34, 211, 238, 0.808);
 }
 
 @media (max-width: 768px) {
