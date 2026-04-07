@@ -2,6 +2,7 @@
 
 ::-webkit-scrollbar {
   width: 8px;
+  background: transparent;
 }
 
 ::-webkit-scrollbar-track {
@@ -21,10 +22,11 @@ body {
 }
 
 .sidebar {
-  width: 280px;
+  z-index: 0;
+  width: 15%;
   height: 100%;
   display: flex;
-  position: absolute;
+  position: fixed;
   background:
     linear-gradient(180deg, #0a0e1a 0%, #0f0825 50%, #060a14 100%),
     radial-gradient(
@@ -71,7 +73,7 @@ body {
 }
 
 .fast-status {
-  width: 100%;
+  width: 80%;
   max-width: 240px;
   padding: 12px;
   background: #22d3ee16;
@@ -79,7 +81,6 @@ body {
   border-radius: 10px;
   position: relative;
   margin-bottom: 10px;
-  flex: none;
 }
 
 .status-point {
@@ -230,4 +231,33 @@ li.active .point {
   border-radius: 15px;
   background-color: #090b0f73;
   border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  background-color: #05070d;
+  height: 100%;
+  width: 85%;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 80px 80px;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
+  margin: 2.5%;
+  font-weight: 400;
+  letter-spacing: 4px;
+  color: #4A576B;
+}
+
+h1 {
+  color: white;
+  margin: -1% 2.5%;
 }
