@@ -137,6 +137,7 @@ body {
 .menus {
   overflow-y: auto;
   width: 100%;
+  height: 80%;
 }
 
 ul {
@@ -195,6 +196,7 @@ ul li a span {
 li.active {
   background-color: rgba(34, 211, 238, 0.10);
   border-color: rgba(34, 211, 238, 0.30);
+  box-shadow: 0 4px 15px 0 rgba(34, 211, 238, 0.08);
 }
 
 li.active .point {
@@ -216,4 +218,16 @@ li.active .point {
     padding: 12px;
     justify-content: center;
   }
+}
+
+.self-info {
+  align-items: right;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  gap: 10px;
+  border: 1px solid white;
+  width: 90%;
+  border-radius: 15px;
+  background-color: #090b0f73;
+  border: 1px solid rgba(255, 255, 255, 0.06);
 }
