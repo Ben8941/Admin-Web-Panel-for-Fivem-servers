@@ -14,7 +14,5 @@ while (box.scrollHeight > box.clientHeight) {
     box.style.fontSize = size + 'px';
 }
 
-/* Hide and show */
-
 
 

@@ -250,16 +250,23 @@ li.active .point {
   padding: 0;
 }
 
-h4 {
+.dashboard h4 {
   margin: 2.5%;
   font-weight: 400;
   letter-spacing: 4px;
   color: #4a576b;
 }
 
-h1 {
+.dashboard h1 {
   color: white;
   margin: -1% 2.5%;
+}
+
+.dashboard p {
+  font-size: 18px;
+  margin: 2vh 2.5%;
+  color: rgb(80, 90, 116);
+  width: 60%;
 }
 
 .form {
@@ -299,7 +306,7 @@ h1 {
 }
 
 .form svg {
-  color: #111;
+  color: var(--icon-change-color);
   transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: absolute;
   height: 15px;
@@ -391,7 +398,11 @@ h1 {
 }
 
 .dashboard-underline {
-  margin: 0 3% 0 4%;
+  margin: 2% 2.5%;
+  justify-content: center;
+  width: 95%;
+  align-items: center;
+  display: flex;
   border: none;
   border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
