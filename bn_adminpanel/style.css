@@ -398,11 +398,57 @@ li.active .point {
 }
 
 .dashboard-underline {
-  margin: 2% 2.5%;
+  margin: 2% 2.5% 0 2.5%;
   justify-content: center;
   width: 95%;
   align-items: center;
   display: flex;
   border: none;
   border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.dashboard-cards {
+  display: flex;
+  justify-content: space-between;
+  margin: 1% 2.5%;
+  width: 95%;
+}
+
+.dashboard-cards div {
+  display: flex;
+  height: 14vh;
+  width: 23%;
+  background-color: #0c0f14;
+  border-radius: 30px;
+  flex-direction: column;
+}
+
+.card-header {
+  display: flex;
+  margin: 6% 8% 0 8%;
+  width: 55%;
+  height: 20%;
+  justify-content: left;
+  font-size: 15px;
+  color: #94a3b8;
+}
+
+.card-info {
+  display: flex;
+  margin: 1% 8%;
+  width: 100%;
+  height: 20%;
+  justify-content: flex-start;
+  font-size: 30px;
+  color: white;
+}
+
+.card-subinfo {
+  display: flex;
+  margin: 4% 8%;
+  width: 100%;
+  height: 20%;
+  justify-content: flex-start;
+  font-size: 15px;
+  color: #94a3b8;
 }
